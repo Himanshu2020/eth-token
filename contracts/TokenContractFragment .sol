@@ -55,7 +55,7 @@ mapping(address => uint256) balances;
        // If this function is called again it overwrites the current allowance with _value.
 
          function approve(address _spender, uint256 _amount) returns (bool success) {
-           allowed[msg.sender][_spender] = _amount
+           allowed[msg.sender][_spender] = _amount;
             return true;
              }
 
